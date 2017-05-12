@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Psychic Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1> The Psychic Game</h1>
+        </header>
+        <div class="instructions"></div>
+            <br>
+            <h2> Guess what letter I'm thinking of :<span id="matchIt"></span> </h2>
+        </div>
+        <div class="main-content">
+            <ul id="scores">
+                <li> Wins: <span id="wins"></li>
+                <li>Losses:<span id="losses"></li>
+                <li>Guessest Left: <span id="guessesLeft"></span></li>
+                <li> Key Pressed : <span id="kp"></span></li>
+            </ul>
+            <!-- <script type="text/javascript">
+	            var counter = 1;
+	            var storedValues = [];
+
+	            document.onkeydown = function(event) {
+                    var key_press = String.fromCharCode(event.keyCode).toLowerCase();
+                    document.getElementById('kp').innerHTML = key_press;
+
+                    var userInput = storedValues.push(key_press);
+
+                } // end of onkeydown function
+            </script> -->
+        </div>
+        <!-- end of main content -->
+    </div>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
